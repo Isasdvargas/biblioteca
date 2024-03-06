@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Livro_1 = require("./Livro");
+var Usuario_1 = require("./Usuario");
+var GeneroLivro_1 = require("./GeneroLivro");
+var StatusLivro_1 = require("./StatusLivro");
+var livro1 = new Livro_1.Livro("Jogos Vorazes", GeneroLivro_1.GeneroLivro.DISTOPIA, "Suzanne Collins", StatusLivro_1.StatusLivro.DISPONIVEL);
+var livro2 = new Livro_1.Livro("É assim que acaba", GeneroLivro_1.GeneroLivro.ROMANCE, "Colleen Hoover", StatusLivro_1.StatusLivro.DISPONIVEL);
+var livro3 = new Livro_1.Livro("O diário de chaves", GeneroLivro_1.GeneroLivro.COMEDIA, "Roberto Gómez", StatusLivro_1.StatusLivro.RESERVADO);
+var livro4 = new Livro_1.Livro("It a coisa", GeneroLivro_1.GeneroLivro.TERROR, "Stephen King", StatusLivro_1.StatusLivro.EMPRESTADO);
+var livro5 = new Livro_1.Livro("O homem de giz", GeneroLivro_1.GeneroLivro.SUSPENSE, "C.J. Tudor", StatusLivro_1.StatusLivro.ATRASADO);
+var usuario1 = new Usuario_1.Usuario('Isadora Vargas', 26, 23875688082, [livro4], [], [livro1], 22);
+var usuario2 = new Usuario_1.Usuario('Murilo Rihan', 8, 12309865477, [], [livro3], [livro4], 0);
+var usuario3 = new Usuario_1.Usuario('Arthur Henrique', 27, 12770688880, [], [livro1], [], 66);
+var usuario4 = new Usuario_1.Usuario('Gaia Silveira', 4, 33875688082, [], [livro5], [livro1, livro2, livro3, livro4], 40);
+var usuario5 = new Usuario_1.Usuario('Rosangela Vianna', 24, 43875688082, [], [livro2], [livro5], 1000);
